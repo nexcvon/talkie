@@ -1,0 +1,28 @@
+
+#ifndef _TALKIE_CONFIG_H
+#define _TALKIE_CONFIG_H
+
+#include <Arduino.h>
+#include <driver/i2s.h>
+
+#define PIN_PTT_BUTTON 23
+
+#define WIFI_SSID "home"
+#define WIFI_PASSPHRASE "123456"
+
+#define MQTT_BROKER_DOMAIN "192.168.1.2"
+#define MQTT_BROKER_PORT 1883
+
+#define I2S_1_SAMPLE_RATE 32000
+#define I2S_1_BITS_PER_SAMPLE I2S_BITS_PER_SAMPLE_16BIT
+#define I2S_1_CHANNEL_FORMAT I2S_CHANNEL_FMT_ONLY_LEFT
+#define I2S_1_DMA_BUFFER_COUNT 4
+#define I2S_1_DMA_BUFFER_LENGTH 1024
+#define I2S_1_PIN_BCK 14
+#define I2S_1_PIN_WS 15
+#define I2S_1_PIN_SDIN 32
+
+#define PLAYBACK_BUFFER_SIZE 65536
+#define PLAYBACK_PIN_DAC DAC1 // 25
+
+#endif
